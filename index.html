@@ -6,30 +6,91 @@
 
     <!-- SEO -->
     <title>Your Name | Portfolio</title>
-    <meta name="description" content="Professional portfolio of John Doe, Web Developer and Designer.">
-    <meta name="keywords" content="portfolio, web developer, designer, HTML5, CSS3">
-    <meta name="author" content="John Doe">
+    <meta name="description" content="Personal portfolio showcasing projects, skills, achievements, and contact information.">
+    <meta name="keywords" content="portfolio, web developer, student, projects, HTML5, accessibility">
+    <meta name="author" content="Your Name">
 
     <!-- Open Graph -->
-    <meta property="og:title" content="John Doe Portfolio">
-    <meta property="og:description" content="Explore projects, skills, and contact information.">
+    <meta property="og:title" content="Your Name | Portfolio">
+    <meta property="og:description" content="Explore my projects, skills, and professional journey.">
     <meta property="og:type" content="website">
 
-    <link rel="canonical" href="https://www.johndoe.com">
+    <link rel="canonical" href="https://yourdomain.com">
 
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+        }
+
+        .skip-link {
+            position: absolute;
+            left: -9999px;
+        }
+
+        .skip-link:focus {
+            left: 10px;
+            top: 10px;
+            background: #fff;
+            padding: 10px;
+            border: 2px solid #000;
+        }
+
+        header, nav, main, section, article, aside, footer {
+            padding: 1rem;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 1rem;
+            padding: 0;
+        }
+
+        a:focus,
+        button:focus,
+        input:focus,
+        textarea:focus {
+            outline: 3px solid #005fcc;
+            outline-offset: 2px;
+        }
+
+        form {
+            max-width: 600px;
+        }
+
+        label {
+            display: block;
+            margin-top: 1rem;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 0.75rem;
+        }
+
+        button {
+            margin-top: 1rem;
+            padding: 0.75rem 1.5rem;
+        }
+    </style>
 </head>
 
 <body>
 
-<a href="#main-content" class="skip-link">Skip to Main Content</a>
+<a href="#main-content" class="skip-link">
+    Skip to main content
+</a>
 
 <header role="banner">
     <h1>Your Name</h1>
+    <p>Web Developer | Student | Designer</p>
 
     <nav aria-label="Primary Navigation">
         <ul>
             <li><a href="index.html" aria-current="page">Home</a></li>
-            <li><a href="about.html">About</a></li>
             <li><a href="projects.html">Projects</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
@@ -38,32 +99,52 @@
 
 <main id="main-content">
 
-    <section aria-labelledby="hero-heading">
-        <h2 id="hero-heading">Welcome to My Portfolio</h2>
+    <section aria-labelledby="about-heading">
+        <h2 id="about-heading">About Me</h2>
         <p>
-            I am a web developer passionate about creating
-            accessible and user-friendly web experiences.
+            Welcome to my portfolio website. I am passionate about
+            creating accessible and user-friendly web experiences.
         </p>
+    </section>
+
+    <section aria-labelledby="skills-heading">
+        <h2 id="skills-heading">Skills</h2>
+
+        <ul>
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>JavaScript</li>
+            <li>Accessibility (WCAG)</li>
+        </ul>
     </section>
 
     <section aria-labelledby="featured-projects">
         <h2 id="featured-projects">Featured Projects</h2>
 
         <article>
-            <h3>Project One</h3>
-            <p>Description of project one.</p>
+            <h3>Portfolio Website</h3>
+            <p>
+                Accessible and SEO-friendly portfolio built with semantic HTML5.
+            </p>
         </article>
 
         <article>
-            <h3>Project Two</h3>
-            <p>Description of project two.</p>
+            <h3>Task Manager App</h3>
+            <p>
+                Productivity application designed with usability and accessibility in mind.
+            </p>
         </article>
     </section>
 
+    <aside aria-labelledby="quick-facts">
+        <h2 id="quick-facts">Quick Facts</h2>
+        <p>Available for internships and freelance opportunities.</p>
+    </aside>
+
 </main>
 
-<footer>
-    <p>&copy; 2026 Your Name. All Rights Reserved.</p>
+<footer role="contentinfo">
+    <p>&copy; 2026 Your Name. All rights reserved.</p>
 </footer>
 
 </body>
