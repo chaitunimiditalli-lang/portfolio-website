@@ -1,56 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Contact</title>
-
-<meta name="description" content="Contact me for projects and collaborations.">
-
-<link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Your Name</title>
+    <meta name="description" content="Get in touch through the accessible contact form.">
 </head>
-
 <body>
 
 <header>
+    <h1>Contact Me</h1>
 
-<h1>Contact Me</h1>
-
-<nav aria-label="Primary Navigation">
-<ul>
-<li><a href="index.html">Home</a></li>
-<li><a href="about.html">About</a></li>
-<li><a href="projects.html">Projects</a></li>
-<li><a href="contact.html">Contact</a></li>
-</ul>
-</nav>
-
+    <nav aria-label="Primary Navigation">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html" aria-current="page">Contact</a></li>
+        </ul>
+    </nav>
 </header>
 
 <main>
 
-<section>
+<section aria-labelledby="contact-heading">
 
-<h2>Send A Message</h2>
+<h2 id="contact-heading">Contact Form</h2>
 
-<form aria-label="Contact Form">
+<form
+    action="#"
+    method="post"
+    aria-label="Contact Form"
+>
 
-<label for="name">Full Name</label>
-<input type="text" id="name" required>
+    <div>
+        <label for="name">
+            Full Name
+        </label>
 
-<label for="email">Email Address</label>
-<input type="email" id="email" required>
+        <input
+            type="text"
+            id="name"
+            name="name"
+            required
+            autocomplete="name"
+            aria-required="true">
+    </div>
 
-<label for="subject">Subject</label>
-<input type="text" id="subject">
+    <div>
+        <label for="email">
+            Email Address
+        </label>
 
-<label for="message">Message</label>
-<textarea id="message" rows="6" required></textarea>
+        <input
+            type="email"
+            id="email"
+            name="email"
+            required
+            autocomplete="email"
+            aria-required="true">
+    </div>
 
-<button type="submit">
-Send Message
-</button>
+    <div>
+        <label for="message">
+            Message
+        </label>
+
+        <textarea
+            id="message"
+            name="message"
+            rows="6"
+            required
+            aria-required="true"></textarea>
+    </div>
+
+    <button type="submit">
+        Send Message
+    </button>
 
 </form>
 
@@ -59,7 +84,7 @@ Send Message
 </main>
 
 <footer>
-<p>&copy; 2026 Your Name</p>
+    <p>&copy; 2026 Your Name</p>
 </footer>
 
 </body>
