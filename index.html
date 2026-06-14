@@ -1,105 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Your Name | Portfolio</title>
+    <!-- SEO -->
+    <title>Your Name | Portfolio</title>
+    <meta name="description"
+        content="Personal portfolio showcasing projects, skills, achievements, and contact information.">
+    <meta name="keywords"
+        content="portfolio, web developer, student, projects, HTML5, accessibility">
+    <meta name="author" content="Your Name">
 
-<meta name="description" content="Portfolio of Chaitanya Kishore - Web Developer specializing in HTML5, CSS3, JavaScript and Responsive Design.">
-<meta name="keywords" content="Portfolio, Web Developer, HTML5, CSS3, JavaScript">
-<meta name="author" content="Chaitanya Kishore">
+    <!-- Open Graph -->
+    <meta property="og:title" content="Your Name | Portfolio">
+    <meta property="og:description"
+        content="Explore my projects, skills, and professional journey.">
+    <meta property="og:type" content="website">
 
-<link rel="stylesheet" href="css/style.css">
+    <link rel="canonical" href="https://yourdomain.com">
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
 
-<body data-theme="light">
+<body>
 
-<a href="#main-content" class="skip-link">Skip to Main Content</a>
+    <a href="#main-content" class="skip-link">
+        Skip to main content
+    </a>
 
-<header>
+    <header role="banner">
 
-<h1>Your Name</h1>
+        <div class="container navbar">
 
-<nav aria-label="Primary Navigation">
-<ul>
-<li><a href="index.html">Home</a></li>
-<li><a href="about.html">About</a></li>
-<li><a href="projects.html">Projects</a></li>
-<li><a href="contact.html">Contact</a></li>
-</ul>
-</nav>
+            <div>
+                <h1>Your Name</h1>
+                <p>Web Developer | Student | Designer</p>
+            </div>
 
-<button id="theme-toggle" aria-label="Toggle Theme">
-🌙 Theme
-</button>
+            <button id="themeToggle" aria-label="Toggle Dark Mode">
+                🌙
+            </button>
 
-</header>
+            <nav aria-label="Primary Navigation">
+                <ul class="nav-links">
+                    <li><a href="index.html" aria-current="page">Home</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
 
-<main id="main-content">
+        </div>
 
-<section class="hero">
+    </header>
 
-<div class="hero-content">
+    <main id="main-content">
 
-<h2>Hello, I'm Your Name</h2>
+        <div class="container">
 
-<p>
-Web Developer passionate about creating modern,
-responsive and accessible web applications.
-</p>
+            <section class="hero">
+                <div class="hero-content">
+                    <h2>Welcome to My Portfolio</h2>
+                    <p>
+                        I am passionate about creating accessible,
+                        responsive, and user-friendly web experiences.
+                    </p>
+                </div>
+            </section>
 
-<a href="projects.html" class="btn">
-View My Projects
-</a>
+            <section class="grid-layout">
 
-</div>
+                <article class="card">
+                    <h2>About Me</h2>
+                    <p>
+                        Welcome to my portfolio website. I am passionate
+                        about creating accessible and user-friendly web
+                        experiences.
+                    </p>
+                </article>
 
-</section>
+                <article class="card">
+                    <h2>Skills</h2>
 
-<section>
+                    <ul>
+                        <li>HTML5</li>
+                        <li>CSS3</li>
+                        <li>JavaScript</li>
+                        <li>Accessibility (WCAG)</li>
+                    </ul>
+                </article>
 
-<h2>Featured Projects</h2>
+                <article class="card">
+                    <h2>Featured Projects</h2>
 
-<div class="projects-grid">
+                    <p>Portfolio Website</p>
+                    <p>Task Manager App</p>
+                </article>
 
-<article class="card">
-<h3>E-Commerce Website</h3>
-<p>Responsive online shopping platform.</p>
-</article>
+            </section>
 
-<article class="card">
-<h3>Task Manager App</h3>
-<p>Productivity and collaboration solution.</p>
-</article>
+            <aside class="card" aria-labelledby="quick-facts">
 
-<article class="card">
-<h3>Portfolio Website</h3>
-<p>Modern accessible portfolio design.</p>
-</article>
+                <h2 id="quick-facts">
+                    Quick Facts
+                </h2>
 
-</div>
+                <p>
+                    Available for internships and freelance opportunities.
+                </p>
 
-</section>
+            </aside>
 
-</main>
+        </div>
 
-<footer>
-<p>© 2026 Your Name. All Rights Reserved.</p>
-</footer>
+    </main>
 
-<script>
-const toggle = document.getElementById("theme-toggle");
+    <footer role="contentinfo">
 
-toggle.addEventListener("click", () => {
+        <div class="container">
+            <p>&copy; 2026 Your Name. All rights reserved.</p>
+        </div>
 
-const current = document.body.dataset.theme;
+    </footer>
 
-document.body.dataset.theme =
-current === "dark" ? "light" : "dark";
-
-});
-</script>
+    <script src="script.js"></script>
 
 </body>
+
 </html>
