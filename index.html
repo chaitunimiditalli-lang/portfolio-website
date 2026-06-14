@@ -6,22 +6,20 @@
 
 <title>Your Name | Portfolio</title>
 
-<meta name="description" content="Professional portfolio website showcasing skills, projects and contact information.">
-<meta name="keywords" content="Portfolio, Web Developer, HTML5, CSS3, Responsive Design">
-<meta name="author" content="Your Name">
+<meta name="description" content="Portfolio of Chaitanya Kishore - Web Developer specializing in HTML5, CSS3, JavaScript and Responsive Design.">
+<meta name="keywords" content="Portfolio, Web Developer, HTML5, CSS3, JavaScript">
+<meta name="author" content="Chaitanya Kishore">
 
 <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body data-theme="light">
 
 <a href="#main-content" class="skip-link">Skip to Main Content</a>
 
 <header>
 
-<div class="logo">
-    <h1>Your Name</h1>
-</div>
+<h1>Your Name</h1>
 
 <nav aria-label="Primary Navigation">
 <ul>
@@ -32,23 +30,31 @@
 </ul>
 </nav>
 
-<button id="theme-toggle">Toggle Theme</button>
+<button id="theme-toggle" aria-label="Toggle Theme">
+🌙 Theme
+</button>
 
 </header>
 
 <main id="main-content">
 
 <section class="hero">
-<h2>Welcome To My Portfolio</h2>
+
+<div class="hero-content">
+
+<h2>Hello, I'm Your Name</h2>
 
 <p>
-I am a passionate Web Developer creating modern,
+Web Developer passionate about creating modern,
 responsive and accessible web applications.
 </p>
 
 <a href="projects.html" class="btn">
 View My Projects
 </a>
+
+</div>
+
 </section>
 
 <section>
@@ -63,13 +69,13 @@ View My Projects
 </article>
 
 <article class="card">
-<h3>Task Management App</h3>
+<h3>Task Manager App</h3>
 <p>Productivity and collaboration solution.</p>
 </article>
 
 <article class="card">
 <h3>Portfolio Website</h3>
-<p>Modern accessible portfolio.</p>
+<p>Modern accessible portfolio design.</p>
 </article>
 
 </div>
@@ -79,17 +85,18 @@ View My Projects
 </main>
 
 <footer>
-<p>&copy; 2026 Your Name. All Rights Reserved.</p>
+<p>© 2026 Your Name. All Rights Reserved.</p>
 </footer>
 
 <script>
-const toggle=document.getElementById("theme-toggle");
+const toggle = document.getElementById("theme-toggle");
 
-toggle.addEventListener("click",()=>{
+toggle.addEventListener("click", () => {
 
-document.body.dataset.theme=
-document.body.dataset.theme==="dark"
-?"light":"dark";
+const current = document.body.dataset.theme;
+
+document.body.dataset.theme =
+current === "dark" ? "light" : "dark";
 
 });
 </script>
